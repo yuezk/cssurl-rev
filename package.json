@@ -1,0 +1,25 @@
+{
+  "name": "cssurl-rev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "css",
+    "rev"
+  ],
+  "author": "yuezk001@dxyer.com",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^7.0.2"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.34",
+    "concat-stream": "^1.5.0",
+    "map-stream": "0.0.6",
+    "vinyl-fs": "^1.0.0"
+  }
+}
