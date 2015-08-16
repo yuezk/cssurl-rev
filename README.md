@@ -11,9 +11,9 @@ npm install --save cssurl-rev
 ## 使用方法
 
 ```javascript
-var cssrev = require('cssurl-rev');
+var Rev = require('cssurl-rev');
 
-cssrev
+new Rev()
     .src('css/*.css')
     .dest('build/css')
     .run(function (err, files) {
@@ -24,12 +24,12 @@ cssrev
 你还可以给 `run` 方法传入一个 `repalcer` 来处理时间戳:
 
 ```javascript
-var cssrev = require('cssurl-rev');
+var Rev = require('cssurl-rev');
 var replacer = function (url, hash) {
     return url + '?' + hash;
 };
 
-cssrev
+new Rev()
     .src('css/*.css')
     .dest('build/css')
     .run({ replacer: replacer }, function (err, files) {
@@ -53,7 +53,7 @@ body {
 JS
 
 ```javascript
-cssrev
+new Rev()
     .src('app.css')
     .dest('build/')
     .run();
@@ -92,15 +92,15 @@ body {
 * option.replacer:Function
 
     如果你自己处理 url 和 hash 的话可以设置一个 `replacer`
-    
+
     ```js
     function replacer(url, hash) {
         return url + '?' + hash;
     }
     ```
-    
+
 * option.skipRemote
-    
+
     跳过所有的远程的 url。即像 `http://example.com/reset.css` 这样的 url 会被忽略掉。默认是 `false`
 
 #### callback(err, files)
