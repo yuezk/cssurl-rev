@@ -1,6 +1,6 @@
 {
   "name": "cssurl-rev",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Append md5 hash to the url in CSS files",
   "keywords": [
     "css",
