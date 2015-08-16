@@ -1,18 +1,22 @@
 {
   "name": "cssurl-rev",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
+  "description": "Append md5 hash to the url in CSS files",
   "keywords": [
     "css",
-    "rev"
+    "url",
+    "revision",
+    "md5"
   ],
-  "author": "yuezk001@dxyer.com",
   "license": "MIT",
+  "author": "Kevin Yue <yuezk001@gmail.com>",
+  "repository": "yuezk/cssurl-rev",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
   "devDependencies": {
+    "express": "^4.13.3",
     "mocha": "^2.2.5",
     "should": "^7.0.2"
   },
