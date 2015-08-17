@@ -1,6 +1,8 @@
-# cssurl-rev ![travis badge](https://travis-ci.org/yuezk/cssurl-rev.svg?branch=master)
+# cssurl-rev
 
 > 给 CSS 文件中的 url 加上 md5 时间戳
+
+![travis badge](https://travis-ci.org/yuezk/cssurl-rev.svg?branch=master)
 
 ## 安装
 
