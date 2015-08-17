@@ -87,6 +87,21 @@ describe('cssurl-rev', function() {
                 });
         });
 
+        it('should work when no dest specified', function () {
+            var expected = [
+                'body {',
+                '    background: url(images/test.png?v=' + md5.slice(0, 10) + ');',
+                '}'
+            ].join('\n');
+
+            var rev = new Rev();
+            rev.src('fixtures/test-local.css')
+                .run(function (err, files) {
+                    should(err).be.null();
+                    files[0].contents.toString().should.be.equal(expected);
+                });
+        });
+
         it('should add the remote file\'s md5 hash to the end of the url', function (done) {
             var expected = [
                 'body {',

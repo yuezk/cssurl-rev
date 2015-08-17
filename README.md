@@ -83,7 +83,7 @@ body {
 
 ### dest(folder)
 
-处理后的文件的保存的文件夹
+处理后的文件的保存的文件夹。可选
 
 ### run([option, callback])
 

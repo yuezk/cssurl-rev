@@ -16,8 +16,10 @@
     "test": "./node_modules/.bin/mocha"
   },
   "devDependencies": {
+    "del": "^1.2.1",
     "express": "^4.13.3",
     "mocha": "^2.2.5",
+    "rimraf": "^2.4.2",
     "should": "^7.0.2"
   },
   "dependencies": {
